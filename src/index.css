@@ -1,0 +1,238 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #e6f9e6; /* light green background */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Resume Container */
+.resume-container {
+  width: 900px;
+  min-height: 100vh;
+  background: #ffffff; /* white content background */
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+/* Header / Intro */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  background: #d9f0d9; /* light green header */
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 15px;
+}
+
+.intro-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.intro-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #90a4ae;
+}
+
+.intro-info h1 {
+  font-size: 20px;
+  color: #2e7d32;
+}
+
+.intro-info h3 {
+  font-size: 14px;
+  color: #388e3c;
+  font-weight: 400;
+}
+
+/* Buttons on Header Right */
+.intro-right {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.download {
+  background: #ffffff;
+  color: #2e7d32;
+  box-shadow: 0 3px 8px rgba(46, 125, 50, 0.2);
+}
+
+.btn.download:hover {
+  background: #c8e6c9;
+}
+
+.btn.hire {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.btn.hire:hover {
+  background: #1b5e20;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Sections & Cards */
+.section {
+  margin-bottom: 15px;
+}
+
+.card {
+  background: #f1fef1; /* lighter green card background */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  font-size: 16px;
+  color: #2e7d32;
+  border-bottom: 2px solid #a5d6a7;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+}
+
+/* Experience / Portfolio Cards */
+.exp-card, .project-card {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #e8f5e9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.exp-card h3, .project-card h3 {
+  font-size: 15px;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.exp-card p, .project-card p, .project-list li {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Project List */
+.project-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+/* Skills Bars */
+.skill-bar {
+  margin-bottom: 10px;
+}
+
+.skill-bar span {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.bar {
+  background: #d0f0d0;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  background: #2e7d32;
+  height: 10px;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+/* Footer */
+.footer {
+  padding: 15px;
+  background: #d9f0d9;
+  text-align: center;
+  font-size: 13px;
+  color: #2e7d32;
+  border-top: 1px solid #a5d6a7;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #2e7d32;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #1b5e20;
+  transform: scale(1.2);
+}
+
+.footer-contact p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-container {
+    width: 95%;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .intro-right {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+
+
+
+
